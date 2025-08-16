@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Navbar super stylée -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    
+    <!-- Logo animé -->
+    <a class="navbar-brand" href="#accueil">
+      <span class="logo-text">Fanta Cissoko</span><span class="logo-dot">•</span>
+    </a>
+    
+    <!-- Bouton menu mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Liens -->
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      
+      <!-- Bouton RDV ultra stylé -->
+      <a href="#contact" class="btn-rdv ms-lg-3">
+         Prendre RDV
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Accueil / Hero -->
+<section id="hero" class="hero section vh-100 d-flex align-items-center">
+  <!-- Arrière-plan décoratif -->
+  <div class="background-elements">
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Texte à gauche -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <div class="hero-text">
+          <h1 class="mb-3">PORTO<span class="accent-text">Folio</span></h1>
+          <h2 class="mb-3">FANTA CISSOKO</h2>
+          <p class="lead mb-3">
+            Je suis <span class="typed" data-typed-items="Développeur Web, Directrice Créative, Stratège en Branding, Experte en Communication Digitale"></span>
+          </p>
+          <p class="description mb-4">
+            Passionnée par la création d’expériences numériques uniques, alliant design innovant et développement performant.
+          </p>
+
+          <!-- Boutons -->
+          <div class="hero-actions mb-4">
+            <a href="#portfolio" class="btn btn-primary me-2">Voir mes réalisations</a>
+            <a href="#contact" class="btn btn-outline-light">Me contacter</a>
+          </div>
+
+          <!-- Réseaux sociaux -->
+          <div class="social-links">
+            <a href="#"><i class="bi bi-dribbble"></i></a>
+            <a href="#"><i class="bi bi-behance"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image à droite avec effet flottant -->
+      <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="200">
+        <div class="profile-container floating">
+          <img src="WhatsApp Image 2025-08-06 à 12.41.03_7fafd385.jpg" 
+               alt="Fanta Cissoko" 
+               class="profile-image rounded-circle shadow-lg">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+
+      <!-- IMAGE -->
+      <div class="about-image" data-aos="fade-right">
+        <div class="image-wrapper">
+          <img src="WhatsApp_Image_2025-08-10_à_11.43.31_a56fd5a0-removebg-preview.png" alt="Fanta Cissoko">
+        </div>
+      </div>
+
+      <!-- TEXTE -->
+      <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+        <h2>Fanta Cissoko</h2>
+        <h4>Creative Director & Brand Designer</h4>
+        <p>
+          Je transforme les idées en expériences visuelles uniques et impactantes. 
+          Mon univers mélange élégance, audace et stratégie pour créer des marques 
+          qui marquent les esprits et séduisent les cœurs.
+        </p>
+        
+        <!-- Bouton stylé -->
+        <a href="#contact" class="btn-glow">✨ Discutons de votre projet</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      
+
+     
+
+
+
+      
+<!-- Services -->
+<section id="services" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Mes Services</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card text-center p-4">
+          <div class="mb-3">
+            <i class="bi bi-code-slash display-4"></i>
+          </div>
+          <h5>Développement Web</h5>
+          <p>Création de sites modernes, rapides et responsives avec les dernières technologies.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card text-center p-4">
+          <div class="mb-3">
+            <i class="bi bi-brush display-4"></i>
+          </div>
+          <h5>Strategie Marketing et Communication Digital</h5>
+          <p>Conception d'interfaces esthétiques et intuitives pour améliorer l'expérience utilisateur.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card text-center p-4">
+          <div class="mb-3">
+            <i class="bi bi-graph-up-arrow display-4"></i>
+          </div>
+          <h5>Brand Manager et Gestion de Projet </h5>
+          <p>Optimisation de sites pour un meilleur référencement et des performances accrues.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+  <!-- Image de fond -->
+  <div class="cta-background"></div>
+
+  <div class="container">
+    <div class="row align-items-center text-center text-xl-start" data-aos="zoom-in" data-aos-delay="100">
+
+      <!-- Texte -->
+      <div class="col-xl-9">
+        <h2 class="cta-title">🚀 Prêt à donner vie à vos idées ?</h2>
+        <p class="cta-text">
+          Transformons ensemble vos concepts en expériences uniques.  
+          Que ce soit pour un projet web, un branding complet ou une stratégie digitale, 
+          je suis là pour passer à l’action !
+        </p>
+      </div>
+
+      <!-- Bouton -->
+      <div class="col-xl-3 cta-btn-container">
+        <a class="cta-btn" href="#contact">Me Contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   
+
+      
+<section id="projets" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Mes Projets Réalisés</h2>
+
+    <div class="projets-container">
+      <!-- Projet 1 -->
+      <div class="projet-card">
+        <video autoplay muted loop playsinline class="projet-video">
+          <source src="WhatsApp Vidéo 2025-08-10 à 11.43.58_81003eb2.mp4" type="video/mp4">
+        </video>
+        <div class="projet-overlay">
+          <h3 class="projet-titre">Projet 1</h3>
+          <h4 class="projet-soustitre">Coaching Branding Texas Grilz</h4>
+          <p class="projet-description">
+            Création d’un programme stratégique pour ancrer la culture de la marque.
+          </p>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="projet-card">
+        <video autoplay muted loop playsinline class="projet-video">
+          <source src="WhatsApp Vidéo 2025-08-10 à 11.43.58_81003eb2.mp4" type="video/mp4">
+        </video>
+        <div class="projet-overlay">
+          <h3 class="projet-titre">Projet 2</h3>
+          <h4 class="projet-soustitre">Stratégie Réseaux Sociaux</h4>
+          <p class="projet-description">
+            Campagne digitale innovante avec storytelling immersif.
+          </p>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="projet-card">
+        <video autoplay muted loop playsinline class="projet-video">
+          <source src="WhatsApp Vidéo 2025-08-10 à 11.43.58_81003eb2.mp4" type="video/mp4">
+        </video>
+        <div class="projet-overlay">
+          <h3 class="projet-titre">Projet 3</h3>
+          <h4 class="projet-soustitre">Identité Visuelle</h4>
+          <p class="projet-description">
+            Création d’une charte graphique complète et cohérente.
+          </p>
+        </div>
+      </div>
+      <!-- Projet 3 -->
+      <div class="projet-card">
+        <video autoplay muted loop playsinline class="projet-video">
+          <source src="WhatsApp Vidéo 2025-08-10 à 11.43.58_81003eb2.mp4" type="video/mp4">
+        </video>
+        <div class="projet-overlay">
+          <h3 class="projet-titre">Projet 3</h3>
+          <h4 class="projet-soustitre">Identité Visuelle</h4>
+          <p class="projet-description">
+            Création d’une charte graphique complète et cohérente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Compétences -->
+<section id="competences" class="skills-section py-5 bg-dark text-light">
+  <div class="container" data-aos="fade-up">
+
+    <h2 class="text-center mb-5">Mes Compétences</h2>
+
+    <div class="row g-4">
+
+      <!-- Gestion de projet -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="skill-card text-center p-4 rounded shadow-lg">
+          <h4 class="mb-3">Gestion de projet</h4>
+          <div class="skill-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Trello-logo-blue.svg" alt="Trello">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Microsoft_Teams_2020.svg" alt="Teams">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Google_Drive_icon_%282020%29.svg" alt="Drive">
+          </div>
+        </div>
+      </div>
+
+      <!-- Développement Web -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="skill-card text-center p-4 rounded shadow-lg">
+          <h4 class="mb-3">Développement Web</h4>
+          <div class="skill-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+          </div>
+        </div>
+      </div>
+
+      <!-- No-Code -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="skill-card text-center p-4 rounded shadow-lg">
+          <h4 class="mb-3">No-Code</h4>
+          <div class="skill-icons">
+            <img src="https://uploads-ssl.webflow.com/605c5aaafa6e3d1c1c6d9a36/605c5aaafa6e3d2b4f6d9a38_webflow-logo.png" alt="Webflow">
+            <img src="https://uploads-ssl.webflow.com/5fae0b1688e8020fd4c928ba/63fd0fadb9d0e61759cf063f_softr-logo.png" alt="Softr">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Zapier_logo.svg" alt="Zapier">
+          </div>
+        </div>
+      </div>
+
+      <!-- Communication & Réseaux sociaux -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="skill-card text-center p-4 rounded shadow-lg">
+          <h4 class="mb-3">Communication</h4>
+          <div class="skill-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/69/TikTok_logo.svg" alt="TikTok">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Canva_Logo.svg" alt="Canva">
+          </div>
+        </div>
+      </div>
+
+      <!-- Branding -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+        <div class="skill-card text-center p-4 rounded shadow-lg">
+          <h4 class="mb-3">Branding</h4>
+          <p class="small text-muted mb-3">Créer une identité qui raconte une histoire.</p>
+          <div class="skill-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_Creative_Cloud_rainbow_icon.svg" alt="Creative Cloud">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+<section id="formation" class="formation-section">
+  <div class="container" data-aos="fade-up">
+    <h6 class="section-title">🎓 Formation & Parcours</h6>
+    <p class="section-subtitle">Un chemin façonné par la créativité, la stratégie et l'envie constante d'apprendre.</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023 — 2024 (Mali mode accademique)</span>
+          <h3>Fondatrice et Brand Manager / Strategie et Gestion de Marque</h3>
+          <p>Approfondissement du storytelling de marque, direction artistique et design system pour créer des expériences cohérentes et impactantes.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 — 2023 (Universite Ipsmart)</span>
+          <h3>Licence en Gestion informatique /Développement Front-End</h3>
+          <p>Maîtrise des bases solides en HTML, CSS, JavaScript et React pour transformer une idée en interface vivante.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">HI😊</span>
+          <img src="WhatsApp_Image_2025-08-14_à_11.20.20_85310b94-removebg-preview.png" alt="" srcset="">
+          
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 — 2025 (KABAKOO accademique)</span>
+          <h3>Certification Marketing et Communication Digital / No-Code & Automatisations</h3>
+          <p>Création rapide de prototypes avec Webflow et Softr, automatisations intelligentes via Zapier.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    
+    <!-- Colonne gauche : photo -->
+    <div class="contact-photo">
+      <div class="photo-frame">
+        <img src="WhatsApp Image 2025-08-14 à 11.20.21_da7c182a.jpg" alt="Votre photo">
+      </div>
+    </div>
+
+    <!-- Colonne droite : formulaire -->
+    <div class="contact-form">
+      <h2>Restons en Contact</h2>
+      <p>Discutons ensemble de votre projet et donnons vie à vos idées avec style.</p>
+      
+      <form>
+        <input type="text" placeholder="Votre Nom" required>
+        <input type="email" placeholder="Votre Email" required>
+        <textarea placeholder="Votre Message" required></textarea>
+        <button type="submit">Envoyer le Message </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+    <div class="footer-content">
+
+        <!-- Colonne gauche : Logo et description -->
+        <div class="footer-left">
+            <img src="WhatsApp Image 2025-08-10 à 11.43.38_d4670f5a.jpg" alt="Fanta cissoko" class="footer-logo">
+            <p>Construisez une image forte. Démarquez-vous et générez des revenus, quel que soit votre métier.</p>
+        </div>
+
+        <!-- Colonne centre : WhatsApp -->
+        <div class="footer-center">
+            <h2>Dispo sur WhatsApp</h2>
+            <a href="https://wa.me/+22377900671" class="btn-whatsapp">
+                🤝 SALUT Fanta
+            </a>
+        </div>
+
+        <!-- Colonne droite : Réseaux sociaux -->
+        <div class="footer-right">
+            <h3>Suivez-moi sur :</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tonprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/tonprofil" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tonprofil" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/tonprofil" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bas de page -->
+    <div class="footer-bottom">
+        <p>©2025 Fanta Cissoko. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#">Cookies</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Design by Godwin</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+      
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<!-- Librairie Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Ton script principal -->
+<script src="script.js"></script>
+
+
+
+</body>
+
+
+
+</html>
